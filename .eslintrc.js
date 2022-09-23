@@ -1,17 +1,25 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/standard'
-  ],
+  extends: ["plugin:vue/essential", "@vue/standard"],
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    parser: "@babel/eslint-parser",
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
-}
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    semi: "Off",
+    quotes: "off",
+    "comma-dangle": "off",
+    eqeqeq: "off",
+    "vue/multi-word-component-names": "off",
+    // "vue/multi-word-component-names": [
+    //   "error",
+    //   {
+    //     ignores: ["index"], //需要忽略的组件名
+    //   },
+    // ],
+  },
+};
